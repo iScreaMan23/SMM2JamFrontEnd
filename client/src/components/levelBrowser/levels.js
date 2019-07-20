@@ -1,7 +1,7 @@
 import Table from 'react-bootstrap/Table'
-import React, { useState  } from 'react';
+import React from 'react';
 import './levels.css';
-import { useFetch } from './../hooks.js';
+import { useFetch } from './hooks.js';
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
@@ -17,8 +17,6 @@ function Levels (props)  {
 
     return (
         <>
-
-
             <Card>
                 <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey={props.value}>{props.value} Levels</Accordion.Toggle>
@@ -50,8 +48,6 @@ function Levels (props)  {
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>
-
-
         </>
     );
 }

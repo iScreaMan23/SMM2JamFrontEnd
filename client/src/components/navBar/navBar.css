@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'airborneregular';
+    src: url('airborne-webfont.woff2') format('woff2'),
+         url('airborne-webfont.woff') format('woff');
+}
+
+.navbarstyle {
+	background-color: #facd10;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'airborneregular';
+    font-size: 20px;
+}
