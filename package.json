@@ -1,0 +1,19 @@
+{
+  "name": "smm2jamfrontend",
+  "version": "1.0.0",
+  "description": "so maybe this time I'll get the things to get duuu the work things",
+  "main": "server.js",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --pefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC"
+}
