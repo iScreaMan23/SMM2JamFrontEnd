@@ -4,21 +4,21 @@ const app = express();
 
 //Standard ID = 1
 app.get('/api/StandardLevels', (req, res) => {
-    const levels = [
-        {
-            "course_id": "123-123-123",
-            "title": "Canadian Blues",
-            "user":{
-                "userName": "BinaryChaosTV"
+	const levels = [
+		{
+			"course_id": "123-123-123",
+			"title": "Canadian Blues",
+			"user":{
+			    "userName": "BinaryChaosTV"
             },
-        },
-        {
-            "course_id": "234-123-423",
-            "title": "Get DUUUUUUUU",
-            "user":{
-                "userName": "TeddyBearKisses"
+		},
+		{
+			"course_id": "234-123-423",
+			"title": "Get DUUUUUUUU",
+			"user":{
+			    "userName": "TeddyBearKisses"
             },
-        },
+		},
         {
             "course_id": "234-123-423",
             "title": "Baked Beans To Live",
@@ -26,9 +26,9 @@ app.get('/api/StandardLevels', (req, res) => {
                 "userName": "FrostBytes"
             },
         },
-    ];
+	];
 
-    res.json(levels);
+	res.json(levels);
 });
 
 // puzzle ID 2
@@ -189,3 +189,4 @@ app.get('/api/KaizoLevels', (req, res) => {
 const port = 5000;
 
 app.listen(port, () => console.log(`Server start on port ${port}`));
+

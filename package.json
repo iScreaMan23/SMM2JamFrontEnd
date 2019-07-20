@@ -1,19 +1,23 @@
 {
-  "name": "smm2jamfrontend",
+  "name": "smm2jamwebsitev2",
   "version": "1.0.0",
-  "description": "so maybe this time I'll get the things to get duuu the work things",
+  "description": "",
   "main": "server.js",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "concurrently": "^4.1.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react-bootstrap": "^1.0.0-beta.9"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "npm start --pefix client",
+    "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "",
-  "license": "ISC"
+  "author": "iscreaman23",
+  "license": "MIT"
 }
